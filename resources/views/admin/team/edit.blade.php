@@ -9,7 +9,7 @@
         <h2>Edit  Home About</h2>
     </div>
     <div class="card-body">
-        <form  action="" method="post" >
+        <form  action="#" method="post" >
         @csrf
 
             <div class="form-group">
