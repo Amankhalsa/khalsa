@@ -167,4 +167,42 @@ public function our_team()
         $team_detail  = Team::get();
     return view('pages.team',compact('team_detail'));
 }
+// new controller for home page 
+public function about_us(){
+    $about_us=Team::all();
+    $brands =DB::table('brands')->get();
+    $messages=DB::table('home_abouts')->first();
+return view('pages.About_us',compact('about_us','brands','messages'));
+}
+
+public function Testimonial(){
+return view('pages.Testimonials');
+
+
+}
+public function Services(){
+return view('pages.Services');
+
+
+}
+
+public function Pricing(){
+return view('pages.Pricing');
+
+
+}
+
+public function Blog(){
+return view('pages.Blog');
+
+
+}
+
+public function Rd_more(){
+return view('pages.Rd_more');
+
+
+}
+
+
 }

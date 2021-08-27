@@ -10,11 +10,11 @@
         </div>
 
         <div class="row">
-@foreach(  $team_detail as $add_detail)
+@foreach( $team_detail as $detail)
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up">
               <div class="member-img">
-                <img src="{{asset($add_detail->image)}}" class="img-fluid" alt="image">
+                <img src="{{asset($detail->image)}}" class="img-fluid" alt="image">
 
                 <div class="social">
                   <a href=""><i class="icofont-twitter"></i></a>
@@ -24,8 +24,8 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4> {{ $add_detail->name}}</h4>
-                <span>{{ $add_detail->designation}} </span>
+                <h4> {{ $detail->name}}</h4>
+                <span>{{ $detail->designation}} </span>
               </div>
             </div>
           </div>

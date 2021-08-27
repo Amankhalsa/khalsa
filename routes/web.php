@@ -215,6 +215,24 @@ Route::post('/store/team/', [HomeController::class,'store_team'])->name('store_t
 
 
 
-//Our tam 
-
+//Our team
 Route::get('/our/team/', [HomeController::class,'our_team'])->name('our_team');
+
+
+// About us page for admin 
+Route::get('/About_us/page/', [HomeController::class,'about_us'])->name('about_us');
+
+//Testimonials  route for home
+Route::get('/Testimonials/page/', [HomeController::class,'Testimonial'])->name('Testimonials');
+//services  route for home
+
+Route::get('/Services/page/', [HomeController::class,'Services'])->name('Services');
+//Pricing
+Route::get('/Pricing/page/', [HomeController::class,'Pricing'])->name('Pricing');
+
+
+//Blog
+Route::get('/Blog/page/', [HomeController::class,'Blog'])->name('Blog');
+//Read mode Blog
+Route::get('/Read/more/', [HomeController::class,'Rd_more'])->name('Rd_more');
+
