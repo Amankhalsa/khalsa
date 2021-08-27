@@ -28,9 +28,9 @@
             <article class="entry" data-aos="fade-up">
 
               <div class="entry-img">
-                <img src="assets/img/blog-1.jpg" alt="" class="img-fluid">
+                <img src="{{asset('frontend/assets/blog-1.jpg')}}" alt="" class="img-fluid">
               </div>
-
+              
               <h2 class="entry-title">
                 <a href="blog-single.html">Dolorum optio tempore voluptas dignissimos cumque fuga qui quibusdam quia reiciendis</a>
               </h2>
@@ -58,11 +58,11 @@
             <article class="entry" data-aos="fade-up">
 
               <div class="entry-img">
-                <img src="assets/img/blog-2.jpg" alt="" class="img-fluid">
+                <img src="{{asset('frontend/assets/blog-2.jpg')}}" alt="" class="img-fluid">
               </div>
 
               <h2 class="entry-title">
-                <a href="blog-single.html">Nisi magni odit consequatur autem nulla dolorem</a>
+                <a href="#">Nisi magni odit consequatur autem nulla dolorem</a>
               </h2>
 
               <div class="entry-meta">
@@ -88,7 +88,7 @@
             <article class="entry" data-aos="fade-up">
 
               <div class="entry-img">
-                <img src="assets/img/blog-3.jpg" alt="" class="img-fluid">
+                <img src="{{asset('frontend/assets/blog-3.jpg')}}" alt="" class="img-fluid">
               </div>
 
               <h2 class="entry-title">
@@ -118,7 +118,7 @@
             <article class="entry" data-aos="fade-up">
 
               <div class="entry-img">
-                <img src="assets/img/blog-4.jpg" alt="" class="img-fluid">
+                <img src="{{asset('frontend/assets/blog-4.jpg')}}" alt="" class="img-fluid">
               </div>
 
               <h2 class="entry-title">
@@ -186,31 +186,31 @@
               <h3 class="sidebar-title">Recent Posts</h3>
               <div class="sidebar-item recent-posts">
                 <div class="post-item clearfix">
-                  <img src="assets/img/blog-recent-posts-1.jpg" alt="">
+                  <img src="{{asset('frontend/assets/blog-recent-posts-1.jpg')}}" alt="">
                   <h4><a href="blog-single.html">Nihil blanditiis at in nihil autem</a></h4>
                   <time datetime="2020-01-01">Jan 1, 2020</time>
                 </div>
 
                 <div class="post-item clearfix">
-                  <img src="assets/img/blog-recent-posts-2.jpg" alt="">
+                  <img src="{{asset('frontend/assets/blog-recent-posts-2.jpg')}}" alt="">
                   <h4><a href="blog-single.html">Quidem autem et impedit</a></h4>
                   <time datetime="2020-01-01">Jan 1, 2020</time>
                 </div>
 
                 <div class="post-item clearfix">
-                  <img src="assets/img/blog-recent-posts-3.jpg" alt="">
+                  <img src="{{asset('frontend/assets/blog-recent-posts-3.jpg')}}" alt="">
                   <h4><a href="blog-single.html">Id quia et et ut maxime similique occaecati ut</a></h4>
                   <time datetime="2020-01-01">Jan 1, 2020</time>
                 </div>
 
                 <div class="post-item clearfix">
-                  <img src="assets/img/blog-recent-posts-4.jpg" alt="">
+                  <img src="{{asset('frontend/assets/blog-recent-posts-4.jpg')}}" alt="">
                   <h4><a href="blog-single.html">Laborum corporis quo dara net para</a></h4>
                   <time datetime="2020-01-01">Jan 1, 2020</time>
                 </div>
 
                 <div class="post-item clearfix">
-                  <img src="assets/img/blog-recent-posts-5.jpg" alt="">
+                  <img src="{{asset('frontend/assets/blog-recent-posts-5.jpg')}}" alt="">
                   <h4><a href="blog-single.html">Et dolores corrupti quae illo quod dolor</a></h4>
                   <time datetime="2020-01-01">Jan 1, 2020</time>
                 </div>

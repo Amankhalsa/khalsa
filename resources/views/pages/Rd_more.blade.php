@@ -27,11 +27,12 @@
             <article class="entry entry-single" data-aos="fade-up">
 
               <div class="entry-img">
-                <img src="assets/img/blog-1.jpg" alt="" class="img-fluid">
+              
+                <img src="{{asset('frontend/assets/blog-1.jpg')}}" alt="" class="img-fluid">
               </div>
 
               <h2 class="entry-title">
-                <a href="blog-single.html">Dolorum optio tempore voluptas dignissimos cumque fuga qui quibusdam quia reiciendis</a>
+                <a href="#">Dolorum optio tempore voluptas dignissimos cumque fuga qui quibusdam quia reiciendis</a>
               </h2>
 
               <div class="entry-meta">
@@ -73,7 +74,7 @@
                   Quia et suscipit non sequi. Maxime sed odit. Beatae nesciunt nesciunt accusamus quia aut ratione aspernatur dolor. Sint harum eveniet dicta exercitationem minima. Exercitationem omnis asperiores natus aperiam dolor consequatur id ex sed. Quibusdam rerum dolores sint consequatur quidem ea.
                   Beatae minima sunt libero soluta sapiente in rem assumenda. Et qui odit voluptatem. Cum quibusdam voluptatem voluptatem accusamus mollitia aut atque aut.
                 </p>
-                <img src="assets/img/blog-5.jpg" class="img-fluid" alt="">
+                <img src="{{asset('frontend/assets/blog-5.jpg')}}" class="img-fluid" alt="">
 
                 <h3>Ut repellat blanditiis est dolore sunt dolorum quae.</h3>
                 <p>
@@ -112,7 +113,8 @@
             </article><!-- End blog entry -->
 
             <div class="blog-author clearfix" data-aos="fade-up">
-              <img src="assets/img/blog-author.jpg" class="rounded-circle float-left" alt="">
+            
+              <img src="{{asset('frontend/assets/blog-author.jpg')}}" class="rounded-circle float-left" alt="">
               <h4>Jane Smith</h4>
               <div class="social-links">
                 <a href="https://twitters.com/#"><i class="icofont-twitter"></i></a>
@@ -129,7 +131,8 @@
               <h4 class="comments-count">8 Comments</h4>
 
               <div id="comment-1" class="comment clearfix">
-                <img src="assets/img/comments-1.jpg" class="comment-img  float-left" alt="">
+              
+                <img src="{{asset('frontend/assets/comments-1.jpg')}}" class="comment-img  float-left" alt="">
                 <h5><a href="">Georgia Reader</a> <a href="#" class="reply"><i class="icofont-reply"></i> Reply</a></h5>
                 <time datetime="2020-01-01">01 Jan, 2020</time>
                 <p>
@@ -140,7 +143,7 @@
               </div><!-- End comment #1 -->
 
               <div id="comment-2" class="comment clearfix">
-                <img src="assets/img/comments-2.jpg" class="comment-img  float-left" alt="">
+                <img src="{{asset('frontend/assets/comments-2.jpg')}}" class="comment-img  float-left" alt="">
                 <h5><a href="">Aron Alvarado</a> <a href="#" class="reply"><i class="icofont-reply"></i> Reply</a></h5>
                 <time datetime="2020-01-01">01 Jan, 2020</time>
                 <p>
@@ -148,7 +151,7 @@
                 </p>
 
                 <div id="comment-reply-1" class="comment comment-reply clearfix">
-                  <img src="assets/img/comments-3.jpg" class="comment-img  float-left" alt="">
+                  <img src="{{asset('frontend/assets/comments-3.jpg')}}" class="comment-img  float-left" alt="">
                   <h5><a href="">Lynda Small</a> <a href="#" class="reply"><i class="icofont-reply"></i> Reply</a></h5>
                   <time datetime="2020-01-01">01 Jan, 2020</time>
                   <p>
@@ -160,7 +163,7 @@
                   </p>
 
                   <div id="comment-reply-2" class="comment comment-reply clearfix">
-                    <img src="assets/img/comments-4.jpg" class="comment-img  float-left" alt="">
+                    <img src="{{asset('frontend/assets/comments-4.jpg')}}" class="comment-img  float-left" alt="">
                     <h5><a href="">Sianna Ramsay</a> <a href="#" class="reply"><i class="icofont-reply"></i> Reply</a></h5>
                     <time datetime="2020-01-01">01 Jan, 2020</time>
                     <p>
@@ -174,7 +177,7 @@
               </div><!-- End comment #2-->
 
               <div id="comment-3" class="comment clearfix">
-                <img src="assets/img/comments-5.jpg" class="comment-img  float-left" alt="">
+                <img src="{{asset('frontend/assets/comments-5.jpg')}}" class="comment-img  float-left" alt="">
                 <h5><a href="">Nolan Davidson</a> <a href="#" class="reply"><i class="icofont-reply"></i> Reply</a></h5>
                 <time datetime="2020-01-01">01 Jan, 2020</time>
                 <p>
@@ -185,7 +188,7 @@
               </div><!-- End comment #3 -->
 
               <div id="comment-4" class="comment clearfix">
-                <img src="assets/img/comments-6.jpg" class="comment-img  float-left" alt="">
+                <img src="{{asset('frontend/assets/comments-6.jpg')}}" class="comment-img  float-left" alt="">
                 <h5><a href="">Kay Duggan</a> <a href="#" class="reply"><i class="icofont-reply"></i> Reply</a></h5>
                 <time datetime="2020-01-01">01 Jan, 2020</time>
                 <p>
@@ -255,31 +258,32 @@
               <h3 class="sidebar-title">Recent Posts</h3>
               <div class="sidebar-item recent-posts">
                 <div class="post-item clearfix">
-                  <img src="assets/img/blog-recent-posts-1.jpg" alt="">
+                
+                  <img src="{{asset('frontend/assets/blog-recent-posts-1.jpg')}}" alt="">
                   <h4><a href="blog-single.html">Nihil blanditiis at in nihil autem</a></h4>
                   <time datetime="2020-01-01">Jan 1, 2020</time>
                 </div>
 
                 <div class="post-item clearfix">
-                  <img src="assets/img/blog-recent-posts-2.jpg" alt="">
+                  <img src="{{asset('frontend/assets/blog-recent-posts-2.jpg')}}" alt="">
                   <h4><a href="blog-single.html">Quidem autem et impedit</a></h4>
                   <time datetime="2020-01-01">Jan 1, 2020</time>
                 </div>
 
                 <div class="post-item clearfix">
-                  <img src="assets/img/blog-recent-posts-3.jpg" alt="">
+                  <img src="{{asset('frontend/assets/blog-recent-posts-3.jpg')}}" alt="">
                   <h4><a href="blog-single.html">Id quia et et ut maxime similique occaecati ut</a></h4>
                   <time datetime="2020-01-01">Jan 1, 2020</time>
                 </div>
 
                 <div class="post-item clearfix">
-                  <img src="assets/img/blog-recent-posts-4.jpg" alt="">
+                  <img src="{{asset('frontend/assets/blog-recent-posts-4.jpg')}}" alt="">
                   <h4><a href="blog-single.html">Laborum corporis quo dara net para</a></h4>
                   <time datetime="2020-01-01">Jan 1, 2020</time>
                 </div>
 
                 <div class="post-item clearfix">
-                  <img src="assets/img/blog-recent-posts-5.jpg" alt="">
+                  <img src="{{asset('frontend/assets/blog-recent-posts-5.jpg')}}" alt="">
                   <h4><a href="blog-single.html">Et dolores corrupti quae illo quod dolor</a></h4>
                   <time datetime="2020-01-01">Jan 1, 2020</time>
                 </div>
