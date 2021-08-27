@@ -1,7 +1,7 @@
 
 
 <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
+<header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
       <h1 class="logo mr-auto"><a href="{{url('/')}}"><span>Aman</span>Khalsa</a></h1>
@@ -14,9 +14,10 @@
 
           <li class="drop-down"><a href="#">About</a>
             <ul>
-              <li><a href="#">About Us</a></li>
+              <li><a href="{{route('about_us')}}">About Us</a></li>
               <li><a href="{{route('our_team')}}">Team</a></li>
-              <li><a href="#">Testimonials</a></li>
+              <li><a href="{{route('Testimonials')}}">Testimonials</a></li>
+
               <li class="drop-down"><a href="#">Deep Drop Down</a>
                 <ul>
                   <li><a href="#">Deep Drop Down 1</a></li>
@@ -29,10 +30,10 @@
             </ul>
           </li>
 
-          <li><a href="#">Services</a></li>
+          <li><a href="{{route('Services')}}">Services</a></li>
           <li><a href="{{route('Portfolio')}}">Portfolio</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Blog</a></li>
+          <li><a href="{{route('Pricing')}}">Pricing</a></li>
+          <li><a href="{{route('Blog')}}">Blog</a></li>
           <li><a href="{{route('Contact')}}">Contact</a></li>
           <li><a href="{{route('login')}}">Login</a></li>
 

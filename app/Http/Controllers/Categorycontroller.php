@@ -68,8 +68,11 @@ class Categorycontroller extends Controller
             // $data['categories_name']= $request ->categories_name;
             // $data['user_id']=Auth::user()->id;
             // DB::table('categories')->insert($data);
-
-    return redirect()->back()->with('sucess', 'Category inserted sucessfull');
+            $notification = array(
+                'message' => 'Category inserted sucessfull',
+                'alert-type' => 'success'
+            );
+    return redirect()->back()->with( $notification);
 
         }
 
@@ -94,18 +97,31 @@ $data= array();
 $data['categories_name']=$request->categories_name;
 $data['user_id']=Auth::user()->id;
 DB::table('categories')->where('id',$id)->update($data);
-    return redirect()->route('all.Category')->with('sucess', 'Category updated sucessfull');
+
+$notification = array(
+    'message' => 'Category updated sucessfull',
+    'alert-type' => 'success'
+);
+    return redirect()->route('all.Category')->with($notification);
 
 
 }
 public function Softdelete($id){
   $delete= Category::find($id)->delete();
-  return  redirect()->back()->with('sucess', 'Category softdeleted sucessfull');
+  $notification = array(
+    'message' => 'Category softdeleted sucessfull',
+    'alert-type' => 'warning'
+);
+  return  redirect()->back()->with($notification);
 }
 
 public function Restore($id){
     $delete= Category::withTrashed()->find($id)->restore();
-  return  redirect()->back()->with('sucess', 'Category Restore sucessfull');
+    $notification = array(
+        'message' => 'Category Restore sucessfull',
+        'alert-type' => 'info'
+    );
+  return  redirect()->back()->with( $notification);
 
 
 
@@ -113,7 +129,12 @@ public function Restore($id){
 }
 public function pdelete($id){
     $delete =Category::onlyTrashed()->find($id)->forceDelete();
-  return  redirect()->back()->with('sucess', 'Category paramently deleteed ');
+
+    $notification = array(
+        'message' => 'Category paramently deleteed',
+        'alert-type' => 'error'
+    );
+  return  redirect()->back()->with($notification);
 
 
 }

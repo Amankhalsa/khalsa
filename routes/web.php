@@ -215,7 +215,7 @@ Route::post('/store/team/', [HomeController::class,'store_team'])->name('store_t
 
 
 
-//Our team
+//Our teamgit
 Route::get('/our/team/', [HomeController::class,'our_team'])->name('our_team');
 
 

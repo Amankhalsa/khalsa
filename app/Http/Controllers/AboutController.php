@@ -39,7 +39,11 @@ public function store_about(Request $resquest){
 
 
     ]);
-     return redirect()->route('home.about')->with('sucess','About Message inserted successfully');
+    $notification = array(
+        'message' => 'About Message inserted successfully',
+        'alert-type' => 'success'
+    );
+     return redirect()->route('home.about')->with($notification );
 
 }
 
@@ -62,7 +66,11 @@ public function update_about(Request $request, $id){
         'updated-at'=>Carbon::now()
 
     ]);
-    return redirect()->route('home.about')->with('sucess','About Message Updated successfully');
+    $notification = array(
+        'message' => 'About Message Updated successfully',
+        'alert-type' => 'success'
+    );
+    return redirect()->route('home.about')->with($notification);
 
 
 }
@@ -72,7 +80,11 @@ public function update_about(Request $request, $id){
 public function delete_about($id){
  
     HomeAbout::find($id)->delete();
-    return redirect()->route('home.about')->with('sucess','About Message Deleted successfully');
+    $notification = array(
+        'message' => 'About Message Deleted successfully',
+        'alert-type' => 'info'
+    );
+    return redirect()->route('home.about')->with(  $notification);
 
 }
 

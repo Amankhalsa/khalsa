@@ -29,9 +29,18 @@ class Changepass extends Controller
             $user->password=Hash::make($request->password);
             $user->save();
             Auth::logout();
-            return redirect()->route('login')->with('success','Password Changed Successfully');
+
+            $notification = array(
+                'message' => 'Password Changed Successfully',
+                'alert-type' => 'success'
+            );
+            return redirect()->route('login')->with($notification);
         }else{
-            return redirect()->back()->with('error','Invalid password entered ');
+            $notification = array(
+                'message' => 'Invalid password entered ',
+                'alert-type' => 'error'
+            );
+            return redirect()->back()->with( $notification);
 
         }
         // if else end 
@@ -60,7 +69,11 @@ class Changepass extends Controller
             $user->email=$request['email'];
 
             $user->save();
-            return redirect()->back()->with('success','Profile  updated Successfully');
+            $notification = array(
+                'message' => 'Profile  updated Successfully',
+                'alert-type' => 'success'
+            );
+            return redirect()->back()->with($notification);
             
         }else{}
 

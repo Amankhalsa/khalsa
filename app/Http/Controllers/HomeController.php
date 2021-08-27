@@ -43,7 +43,11 @@ Slider::insert([
 
 
 ]);
-return redirect()->route('home.slider')->with('sucess','Slider added successfully');
+$notification = array(
+    'message' => 'Slider added successfully',
+    'alert-type' => 'success'
+);
+return redirect()->route('home.slider')->with($notification);
 
     }
 
@@ -74,7 +78,11 @@ return redirect()->route('home.slider')->with('sucess','Slider added successfull
      
      
      ]);
-     return redirect()->route('home.slider')->with('sucess','slider updated successfully');
+     $notification = array(
+        'message' => 'slider updated successfully',
+        'alert-type' => 'success'
+    );
+     return redirect()->route('home.slider')->with(  $notification);
      
     }
         //if else 
@@ -91,7 +99,11 @@ return redirect()->route('home.slider')->with('sucess','Slider added successfull
             
             
             ]);
-            return redirect()->route('home.slider')->with('sucess','slider updated successfully');
+            $notification = array(
+                'message' => 'slider updated successfully',
+                'alert-type' => 'info'
+            );
+            return redirect()->route('home.slider')->with(  $notification);
             
 
 
@@ -107,7 +119,12 @@ return redirect()->route('home.slider')->with('sucess','Slider added successfull
         unlink($old_image);
         Slider::find($id)->delete();
 // return redirect()->back()->with('sucess','Slider deleted successfully');
-return redirect()->route('home.slider')->with('sucess','slider deleted successfully');
+$notification = array(
+    'message' => 'slider deleted successfully',
+    'alert-type' => 'error'
+);
+
+return redirect()->route('home.slider')->with($notification);
 
 
 

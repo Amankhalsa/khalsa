@@ -1,6 +1,21 @@
 @extends('layouts.master_home')
 @section('title', 'Team')
 @section('home_content')
+
+  <!-- ======= Breadcrumbs ======= -->
+  <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Team</h2>
+          <ol>
+            <li><a href="#">Home</a></li>
+            <li>Team</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
 <section id="team" class="team section-bg">
       <div class="container">
 

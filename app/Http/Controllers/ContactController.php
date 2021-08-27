@@ -46,7 +46,11 @@ class ContactController extends Controller
 
 
         ]);
-return redirect()->route('Admin_contact')->with('success','Contact inserted successfully');
+        $notification = array(
+            'message' => 'Contact inserted successfully',
+            'alert-type' => 'success'
+        );
+return redirect()->route('Admin_contact')->with($notification );
     }
 
 //edit method 
@@ -69,14 +73,23 @@ public function contact_update(Request $resuest, $id){
 
 
     ]);
-return redirect()->route('Admin_contact')->with('success','Contact updated successfully');
+    $notification = array(
+        'message' => 'Contact updated successfully',
+        'alert-type' => 'info'
+    );
+return redirect()->route('Admin_contact')->with($notification );
 
 
 }
 //del method 
     public function del_Contacts($id){
         Contact::find($id)->delete();
-return redirect()->route('Admin_contact')->with('success','Contact deleted successfully');
+
+        $notification = array(
+            'message' => 'Contact deleted successfully',
+            'alert-type' => 'error'
+        );
+return redirect()->route('Admin_contact')->with( $notification );
         
 
     }
@@ -101,7 +114,12 @@ return redirect()->route('Admin_contact')->with('success','Contact deleted succe
         
 
         ]);
-return redirect()->back()->with('success','Your Message send successfully');
+
+        $notification = array(
+            'message' => 'Your Message send successfully',
+            'alert-type' => 'success'
+        );
+return redirect()->back()->with( $notification );
 
     }
 
@@ -116,7 +134,13 @@ return redirect()->back()->with('success','Your Message send successfully');
 
     public function Del_msg($id){
         ContactForm::find($id)->delete();
-return redirect()->back()->with('success','Message deleted successfully');
+
+        
+        $notification = array(
+            'message' => 'Message deleted successfully',
+            'alert-type' => 'error'
+        );
+return redirect()->back()->with($notification);
 
 
     }
