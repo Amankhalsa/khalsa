@@ -10,10 +10,10 @@
 </div>
 <form class="form-pill" action="{{route('pass_update')}}" method="post"> 
 @csrf
-    <div class="form-group">
-        <label for="exampleFormControlInput3">Current Password : </label>
-        <input  class="form-control" id="password" type="password" name="old_pass" 
-         placeholder="Current Password">
+
+
+
+
 
 @error('old_pass') 
 <span class="text-danger">{{ $message }} </span>

@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\User;
 use Auth;
+use Image;
+
 use Illuminate\Support\Facades\Hash;
 class Changepass extends Controller
 {
@@ -63,8 +65,21 @@ class Changepass extends Controller
 
     public function update_profile(Request $request){
 
+        // $old_image =$request->old_image;
+    //     $pro_image =$request->file('photo');
+
+    //     //if else 
+    //  if($pro_image){
+    //     $name_gen= hexdec(uniqid()).'.'.$pro_image->getClientOriginalExtension();
+    //     Image::make($pro_image)->save('storage/profile-photos/'.$name_gen);
+    //     $last_img='storage/profile-photos/'.$name_gen;
+    //  }
+    //  unlink($old_image); 
+   
         $user =User::find(Auth::user()->id);
         if($user){
+            // $user->profile_photo_path=$request[$last_img];
+
             $user->name=$request['name'];
             $user->email=$request['email'];
 
@@ -75,9 +90,13 @@ class Changepass extends Controller
             );
             return redirect()->back()->with($notification);
             
-        }else{}
+        }
+    
+        else{
 
         return redirect()->back();
 
     }
+
+}
 }

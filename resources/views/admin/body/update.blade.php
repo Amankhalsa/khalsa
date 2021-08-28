@@ -10,8 +10,19 @@
 </div>
 
 
-<form class="form-pill" action="{{route('update_profile')}}" method="post"> 
+<form class="form-pill" action="{{route('update_profile')}}" method="post"  enctype="multipart/form-data"> 
 @csrf
+<hr>
+<div class="form-group">
+<input type="hidden" name="old_image" value="{{ Auth::user()->profile_photo_path }}">
+
+<img id="output" src="{{Auth::user()->profile_photo_url  }}" style="width:50px; height:50px; border-radius: 100%;" >
+
+<hr>
+<input name="photo" type="file" accept="image/*" onchange="document.getElementById('output').src = window.URL.createObjectURL(this.files[0])">
+<br>    
+
+</div>
     <div class="form-group">
         <label for="exampleFormControlInput3">User name : </label>
         <input  class="form-control" id="name" type="text" name="name" 
