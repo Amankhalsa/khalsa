@@ -7,12 +7,13 @@
 
   <title>@yield('title') - Admin khalsa </title>
   <!-- Latest compiled and minified CSS -->
+  <link href="  {{asset('frontend/assets/favicon.png')}}" rel="icon">
+
   <link href="https://cdn.rawgit.com/shabuninil/fileup/master/src/fileup.min.css" rel="stylesheet">
   <!-- GOOGLE FONTS -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500|Poppins:400,500,600,700|Roboto:400,500" rel="stylesheet"/>
   <link href="https://cdn.materialdesignicons.com/3.0.39/css/materialdesignicons.min.css" rel="stylesheet" />
-
-
+<!-- Toaster  -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" >
 
     <!-- PLUGINS CSS STYLE -->
@@ -139,14 +140,15 @@
                   <!-- User Account -->
                   <li class="dropdown user-menu">
                     <button href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-  <img src="{{  Auth::user()->profile_photo_url }}" class="user-image" alt="User Image"
+  <img src="{{(!empty(Auth::user()->profile_photo_path)) ? url('upload/user_image/'.Auth::user()->profile_photo_path): url('upload/no_image.jpg')}}" class="user-image" alt="User Image"
   style="width:50px;   height:50px; border-radius: 100%;" />
+
                       <span class="d-none d-lg-inline-block">  {{ Auth::user()->name }}</span>
                     </button>
                     <ul class="dropdown-menu dropdown-menu-right">
                       <!-- User image -->
                       <li class="dropdown-header">
-<img src="{{  Auth::user()->profile_photo_url }}" class="img-circle" alt="User Image"  
+<img src="{{(!empty(Auth::user()->profile_photo_path)) ? url('upload/user_image/'.Auth::user()->profile_photo_path): url('upload/no_image.jpg')}}" class="img-circle" alt="User Image"  
 style="width:30px;   height:30px; border-radius: 100%;"/>
                         <div class="d-inline-block">
                         {{ Auth::user()->name }} <small class="pt-1">{{ Auth::user()->email }}</small>

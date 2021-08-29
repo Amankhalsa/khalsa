@@ -82,7 +82,17 @@ class Changepass extends Controller
 
             $user->name=$request['name'];
             $user->email=$request['email'];
-
+            //Image code 
+            if($request->file('photo')){
+                $file =$request->file('photo');
+        @unlink(public_path('upload/user_image/'.$user->profile_photo_path));
+                $filename = date('ymdHi').$file->getClientOriginalName();
+                $file->move(public_path('upload/user_image'),$filename);
+                $user['profile_photo_path'] =$filename;
+    
+    
+            }
+            //end image code 
             $user->save();
             $notification = array(
                 'message' => 'Profile  updated Successfully',

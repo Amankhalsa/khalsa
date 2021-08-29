@@ -16,7 +16,7 @@
 <div class="form-group">
 <input type="hidden" name="old_image" value="{{ Auth::user()->profile_photo_path }}">
 
-<img id="output" src="{{Auth::user()->profile_photo_url  }}" style="width:50px; height:50px; border-radius: 100%;" >
+<img id="output" src="{{(!empty($user->profile_photo_path)) ? url('upload/user_image/'.$user->profile_photo_path): url('upload/no_image.jpg')}}" style="width:50px; height:50px; border-radius: 100%;" >
 
 <hr>
 <input name="photo" type="file" accept="image/*" onchange="document.getElementById('output').src = window.URL.createObjectURL(this.files[0])">
