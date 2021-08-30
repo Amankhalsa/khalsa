@@ -62,25 +62,24 @@ $notification = array(
 );
 return redirect()->back()->with($notification);
     }
-
+//=============================================edit ===================================================
     public function Edit($id){
 
     $brand=Brand::find($id);
     return view('admin.brand.edit',compact('brand'));        
     }
+
+
+    //====================================== UPDATE  =======================================================
     public function update_image(Request $request,$id){
 
         $validatedData = $request->validate([
     'brand_name' => 'required|min:4'
-   
-
 ],
 [
     'brand_name.required' => 'Please input brand name',
-     'brand_image.min' => 'Category longer then 4 characters',
-  
+     'brand_image.min' => 'Category longer then 4 characters', 
 ]);
-
 $old_image =$request->old_image;
 $brand_image =$request->file('brand_image');
 if($brand_image){

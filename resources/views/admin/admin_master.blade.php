@@ -279,7 +279,7 @@ $('.show').mouseenter(function(){
 	
 	$('#page').show('fast');
 })
-	
+
 
 	// new code 
 
