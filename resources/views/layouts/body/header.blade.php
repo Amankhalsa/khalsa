@@ -3,7 +3,7 @@
 <!-- ======= Header ======= -->
 <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
-
+    
       <h1 class="logo mr-auto"><a href="{{url('/')}}"><span>Aman</span>Khalsa</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
@@ -18,7 +18,7 @@
               <li><a href="{{route('our_team')}}">Team</a></li>
               <li><a href="{{route('Testimonials')}}">Testimonials</a></li>
 
-              <li class="drop-down"><a href="#">Deep Drop Down</a>
+              <!-- <li class="drop-down"><a href="#">Deep Drop Down</a>
                 <ul>
                   <li><a href="#">Deep Drop Down 1</a></li>
                   <li><a href="#">Deep Drop Down 2</a></li>
@@ -26,7 +26,7 @@
                   <li><a href="#">Deep Drop Down 4</a></li>
                   <li><a href="#">Deep Drop Down 5</a></li>
                 </ul>
-              </li>
+              </li> -->
             </ul>
           </li>
 
@@ -35,13 +35,28 @@
           <li><a href="{{route('Pricing')}}">Pricing</a></li>
           <li><a href="{{route('Blog')}}">Blog</a></li>
           <li><a href="{{route('Contact')}}">Contact</a></li>
+  
           <li><a href="{{route('login')}}">Login</a></li>
+          
+          <li class="drop-down"><a href="#">Project</a>
+                <ul>
+                <li><a href="https://amankhalsa.github.io/Mysite/">Apple Clone</a></li>
 
+                  <li><a href="https://amankhalsa.github.io/Theams/">Themes</a></li>
+                  <li><a href="https://amankhalsa.github.io/javacalc/">JS Calc</a></li>
+                  <li><a href="https://github.com/Amankhalsa/school-managemet-system">school managemet</a></li>
+                  <li><a href="https://github.com/Amankhalsa/50projects50days">50projects</a></li>
+                </ul>
+              </li >
+           
+          
 
         </ul>
       </nav><!-- .nav-menu -->
 
       <div class="header-social-links">
+     
+      <a href="https://github.com/Amankhalsa" class="twitter"><img src="{{asset('frontend/assets/GitHub.png')}}" alt="" width="30px" height="30px" target="_blank"></a> 
         <a href="https://twitter.com/amansin31gmail2" class="twitter"><i class="icofont-twitter"></i></a>
         <a href="https://www.facebook.com/amansingh.co/" class="facebook"><i class="icofont-facebook"></i></a>
         <a href="https://www.instagram.com/khalsa_veeer/" class="instagram"><i class="icofont-instagram"></i></a>
