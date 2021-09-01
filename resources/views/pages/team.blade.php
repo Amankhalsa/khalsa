@@ -9,7 +9,7 @@
         <div class="d-flex justify-content-between align-items-center">
           <h2>Team</h2>
           <ol>
-            <li><a href="#">Home</a></li>
+            <li><a href="{{url('/')}}">Home</a></li>
             <li>Team</li>
           </ol>
         </div>

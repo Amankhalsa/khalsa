@@ -1,7 +1,9 @@
 
-
+ 
+ 
 <!-- ======= Header ======= -->
 <header id="header" class="fixed-top">
+  
     <div class="container d-flex align-items-center">
     
       <h1 class="logo mr-auto"><a href="{{url('/')}}"><span>Aman</span>Khalsa</a></h1>
